@@ -23,4 +23,4 @@ Save the input and output files for each configuration and each algorithm.
 -   If you run out of resources for a specific configuration (e.g., out of memory for 1,000,000 keys), it should be noted and submitted.
 
 ## Logarithmic Chart
-
+![Insertion Sort for Random Ascending Keys](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Ascending%20Keys.png)
