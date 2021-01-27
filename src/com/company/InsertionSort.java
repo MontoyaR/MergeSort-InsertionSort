@@ -4,37 +4,59 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class InsertionSort {
 
     public static void main(String[] args) throws IOException {
-        Random randomNum = new Random();
+
         Scanner scanner = new Scanner(System.in);
 
-        // Number of keys
-        int length;
+        System.out.println("Enter the amount of randomly generated keys you want?");
+        int amount = scanner.nextInt();
 
-        System.out.println("How many randomly generated keys do you want?");
-        length = scanner.nextInt();
+        System.out.println("\nEnter 0 for randomly generated key. Enter 1 for randomly generated ascending keys. " +
+                "Enter 2 for randomly generated descending keys. Otherwise randomly generated key will be used.");
 
-        // Array to store the values of the randomly generated unsorted keys
-        int[] keys = new int[length];
+        int choice = scanner.nextInt();
 
-        for (int i = 0; i < length; i++){
-            keys[i] = randomNum.nextInt();
+        // Array that will hold the values of the generated keys
+        int[] keys;
+
+        switch(choice) {
+
+            case 1 :
+                keys = generateAscendingRandomKeys(amount);
+                System.out.println("\nAscending Random Keys:");
+                break;
+
+            case 2 :
+                keys = generateDescendingRandomKeys(amount);
+                System.out.println("\nDescending Random Keys:");
+                break;
+
+            default :
+                keys = generateRandomKeys(amount);
+                System.out.println("\nRandom Keys:");
+                break;
+        }
+
+        for (int i = 0; i < keys.length; i++) {
             System.out.println(keys[i]);
         }
 
         // Stores the value of the keys array as an text file
-        write("10.random.keys.InsertionSort.txt", keys);
+        write("src/Input/1000000.random.descending.keys.InsertionSort.txt", keys);
 
         // Reads the keys value from the text file
-        Scanner s = new Scanner(new File("10.random.keys.InsertionSort.txt"));
-        int[] input = new int[length];
+        Scanner s = new Scanner(new File("src/Input/1000000.random.descending.keys.InsertionSort.txt"));
+
+        // Stores the values read from the input file
+        int[] input = new int[amount];
         int temp = 0;
-        while (s.hasNextInt()){
+        while (s.hasNextInt()) {
             input[temp++] = s.nextInt();
         }
 
@@ -53,13 +75,57 @@ public class InsertionSort {
         }
 
         // Stores the result after completing the Merge Sort Algorithm on the array as a text file
-        write("output.InsertionSort.10.keys.txt", input);
+        write("src/Output/output.InsertionSort.1000000.random.descending.keys.txt", input);
 
         // Runtime for Merge Sort Algorithm
         long runtime = endTime - startTime;
 
         double runtimeInSeconds = (double) runtime / 1_000_000_000;
         System.out.println("\nInsertion Sort Algorithm runtime: " + runtimeInSeconds + " seconds");
+    }
+
+    public static int[] generateAscendingRandomKeys(int amount) {
+        int[] Numbers = new int[amount];
+        Random random = new Random();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            Numbers[i] = random.nextInt();
+        }
+
+        Arrays.sort(Numbers);
+        return Numbers;
+    }
+
+    public static int[] generateRandomKeys(int amount) {
+        int[] Numbers = new int[amount];
+        Random random = new Random();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            Numbers[i] = random.nextInt();
+        }
+        return Numbers;
+    }
+
+    public static int[] generateDescendingRandomKeys(int amount) {
+        int[] Numbers = new int[amount];
+        Random random = new Random();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            Numbers[i] = random.nextInt();
+        }
+
+        Arrays.sort(Numbers);
+
+        int temp;
+
+        for (int i = 0; i < Numbers.length; i++) {
+            for (int j = i; j < Numbers.length; j++) {
+                temp = Numbers[i];
+                Numbers[i] = Numbers[j];
+                Numbers[j] = temp;
+            }
+        }
+        return Numbers;
     }
 
     public static void write (String filename, int[] x) throws IOException{
