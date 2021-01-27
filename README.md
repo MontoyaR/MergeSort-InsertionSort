@@ -42,49 +42,49 @@ Save the input and output files for each configuration and each algorithm.
 | 4   | 0.0026526  | 10000.random.ascending.keys.MergeSort.txt    |
 | 5   | 0.0171931  | 100000.random.ascending.keys.MergeSort.txt   |
 | 6   | 0.0531297  | 1000000.random.ascending.keys.MergeSort.txt  |
-|     |            |                                              |
-|     |            |                                              |
+
+![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Ascending%20Keys.png)
+
+| Run | Time (sec) | File                                         |
+|-----|------------|----------------------------------------------|
 | 1   | 7.1E-6     | 10.random.descending.keys.MergeSort.txt      |
 | 2   | 3.99E-5    | 100.random.descending.keys.MergeSort.txt     |
 | 3   | 0.0013772  | 1000.random.descending.keys.MergeSort.txt    |
 | 4   | 0.0019207  | 10000.random.descending.keys.MergeSort.txt   |
 | 5   | 0.0124113  | 100000.random.descending.keys.MergeSort.txt  |
 | 6   | 0.0774013  | 1000000.random.descending.keys.MergeSort.txt |
-|     |            |                                              |
-|     |            |                                              |
+
+![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Descending%20Keys.png)
+
+| Run | Time (sec) | File                                         |
+|-----|------------|----------------------------------------------|
 | 1   | 4.0E-6     | 10.random.keys.InsertionSort.txt             |
 | 2   | 3.63E-5    | 100.random.keys.InsertionSort.txt            |
 | 3   | 0.00396    | 1000.random.keys.InsertionSort.txt           |
 | 4   | 0.0120928  | 10000.random.keys.InsertionSort.txt          |
 | 5   | 0.7183386  | 100000.random.keys.InsertionSort.txt         |
 | 6   | 69.9760599 | 1000000.random.keys.InsertionSort.txt        |
-|     |            |                                              |
-|     |            |                                              |
+
+![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Keys.png)
+
+| Run | Time (sec) | File                                            |
+|-----|------------|-------------------------------------------------|
 | 1   | 2.2E-6     | 10.random.ascending.keys.InsertionSort.txt      |
 | 2   | 3.7E-6     | 100.random.ascending.keys.InsertionSort.txt     |
 | 3   | 3.3E-5     | 1000.random.ascending.keys.InsertionSort.txt    |
 | 4   | 3.111E-4   | 10000.random.ascending.keys.InsertionSort.txt   |
 | 5   | 0.0026989  | 100000.random.ascending.keys.InsertionSort.txt  |
 | 6   | 0.0040164  | 1000000.random.ascending.keys.InsertionSort.txt |
-|     |            |                                                  |
-|     |            |                                                  |
+
+![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Ascending%20Keys.png)
+
+| Run | Time (sec) | File                                             |
+|-----|------------|--------------------------------------------------|
 | 1   | 2.7E-6     | 10.random.descending.keys.InsertionSort.txt      |
 | 2   | 7.08E-5    | 100.random.descending.keys.InsertionSort.txt     |
 | 3   | 0.0060629  | 1000.random.descending.keys.InsertionSort.txt    |
 | 4   | 0.0228513  | 10000.random.descending.keys.InsertionSort.txt   |
 | 5   | 1.5202953  | 100000.random.descending.keys.InsertionSort.txt  |
 | 6   | 138.803165 | 1000000.random.descending.keys.InsertionSort.txt |
-
-
-## Logarithmic Chart
-
-
-![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Ascending%20Keys.png)
-
-![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Descending%20Keys.png)
-
-![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Keys.png)
-
-![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Ascending%20Keys.png)
 
 ![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Descending%20Keys.png)
