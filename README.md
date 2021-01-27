@@ -31,8 +31,11 @@ Save the input and output files for each configuration and each algorithm.
 | 4   | 0.0015796  | 10000.random.keys.MergeSort.txt              |
 | 5   | 0.0196397  | 100000.random.keys.MergeSort.txt             |
 | 6   | 0.1052271  | 1000000.random.keys.MergeSort.txt            |
-|     |            |                                              |
-|     |            |                                              |
+
+![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Keys.png)
+
+| Run | Time (sec) | File                                         |
+|-----|------------|----------------------------------------------|
 | 1   | 1.14E-5    | 10.random.ascending.keys.MergeSort.txt       |
 | 2   | 1.378E-4   | 100.random.ascending.keys.MergeSort.txt      |
 | 3   | 7.393E-4   | 1000.random.ascending.keys.MergeSort.txt     |
@@ -74,7 +77,7 @@ Save the input and output files for each configuration and each algorithm.
 
 
 ## Logarithmic Chart
-![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Keys.png)
+
 
 ![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Merge%20Sort%20for%20Random%20Ascending%20Keys.png)
 
