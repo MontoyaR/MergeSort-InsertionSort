@@ -22,7 +22,7 @@ Save the input and output files for each configuration and each algorithm.
 -   Compare the recorded performances (time measurements) with their theoretical growth rates, i.e., “Big-oh” complexities.
 -   If you run out of resources for a specific configuration (e.g., out of memory for 1,000,000 keys), it should be noted and submitted.
 
-## Time Performance
+## Algorithm Performance
 | Run | Time (sec) | File                                         |
 |-----|------------|----------------------------------------------|
 | 1   | 8.4E-6     | 10.random.keys.MergeSort.txt                 |
