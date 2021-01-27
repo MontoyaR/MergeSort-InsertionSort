@@ -1,0 +1,23 @@
+Run                     Time(sec)               File
+
+1                       8.4E-6                  10.random.keys.MergeSort.txt
+2                       5.1E-5                  100.random.keys.MergeSort.txt
+3                       5.368E-4                1000.random.keys.MergeSort.txt
+4                       0.0015796               10000.random.keys.MergeSort.txt
+5                       0.0196397               100000.random.keys.MergeSort.txt
+6                       0.1052271               1000000.random.keys.MergeSort.txt
+
+1                       1.14E-5                 10.random.ascending.keys.MergeSort.txt
+2                       1.378E-4                100.random.ascending.keys.MergeSort.txt
+3                       7.393E-4                1000.random.ascending.keys.MergeSort.txt
+4                       0.0026526               10000.random.ascending.keys.MergeSort.txt
+5                       0.0171931               100000.random.ascending.keys.MergeSort.txt
+6                       0.0531297               1000000.random.ascending.keys.MergeSort.txt
+
+1                       7.1E-6                  10.random.descending.keys.MergeSort.txt
+2                       3.99E-5                 100.random.descending.keys.MergeSort.txt
+3                       0.0013772               1000.random.descending.keys.MergeSort.txt
+4                       0.0019207               10000.random.descending.keys.MergeSort.txt
+5                       0.0124113               100000.random.descending.keys.MergeSort.txt
+6                       0.0774013               1000000.random.descending.keys.MergeSort.txt
+

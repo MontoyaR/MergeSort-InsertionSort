@@ -1,37 +1,58 @@
 package com.company;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class MergeSort {
     public static void main(String[] args) throws IOException {
 
-        Random randomNum = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        // Number of keys
-        int length;
+        System.out.println("Enter the amount of randomly generated keys you want?");
+        int amount = scanner.nextInt();
 
-        System.out.println("How many randomly generated keys do you want?");
-        length = scanner.nextInt();
+        System.out.println("\nEnter 0 for randomly generated key. Enter 1 for randomly generated ascending keys. " +
+                "Enter 2 for randomly generated descending keys. Otherwise randomly generated key will be used.");
 
-        // Array to store the values of the randomly generated unsorted keys
-        int[] keys = new int[length];
+        int choice = scanner.nextInt();
 
-        for (int i = 0; i < length; i++){
-            keys[i] = randomNum.nextInt();
+        // Array that will hold the values of the generated keys
+        int[] keys;
+
+        switch(choice) {
+
+            case 1 :
+                keys = generateAscendingRandomKeys(amount);
+                System.out.println("\nAscending Random Keys:");
+                break;
+
+            case 2 :
+                keys = generateDescendingRandomKeys(amount);
+                System.out.println("\nDescending Random Keys:");
+                break;
+
+            default :
+                keys = generateRandomKeys(amount);
+                System.out.println("\nRandom Keys:");
+                break;
+        }
+
+        for (int i = 0; i < keys.length; i++) {
             System.out.println(keys[i]);
         }
 
         // Stores the value of the keys array as an text file
-        write("10.keys.MergeSort.txt", keys);
+        write("src/Input/1000000.random.descending.keys.MergeSort.txt", keys);
 
         // Reads the keys value from the text file
-        Scanner s = new Scanner(new File("10.keys.MergeSort.txt"));
-        int[] input = new int[length];
+        Scanner s = new Scanner(new File("src/Input/1000000.random.descending.keys.MergeSort.txt"));
+
+        // Stores the values read from the input file
+        int[] input = new int[amount];
         int temp = 0;
-        while (s.hasNextInt()){
+        while (s.hasNextInt()) {
             input[temp++] = s.nextInt();
         }
 
@@ -50,7 +71,7 @@ public class MergeSort {
         }
 
         // Stores the result after completing the Merge Sort Algorithm on the array as a text file
-        write("output.MergeSort.10.keys.txt", input);
+        write("src/Output/output.MergeSort.1000000.random.descending.keys.txt", input);
 
         // Runtime for Merge Sort Algorithm
         long runtime = endTime - startTime;
@@ -59,13 +80,51 @@ public class MergeSort {
         System.out.println("\nMerge Sort Algorithm runtime: " + runtimeInSeconds + " seconds");
     }
 
-    /**
-     *
-     * @param filename
-     * @param x
-     * @throws IOException
-     */
-    public static void write (String filename, int[] x) throws IOException{
+    public static int[] generateAscendingRandomKeys(int amount) {
+        int[] Numbers = new int[amount];
+        Random random = new Random();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            Numbers[i] = random.nextInt();
+        }
+
+        Arrays.sort(Numbers);
+        return Numbers;
+    }
+
+    public static int[] generateRandomKeys(int amount) {
+        int[] Numbers = new int[amount];
+        Random random = new Random();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            Numbers[i] = random.nextInt();
+        }
+        return Numbers;
+    }
+
+    public static int[] generateDescendingRandomKeys(int amount) {
+        int[] Numbers = new int[amount];
+        Random random = new Random();
+
+        for (int i = 0; i < Numbers.length; i++) {
+            Numbers[i] = random.nextInt();
+        }
+
+        Arrays.sort(Numbers);
+
+        int temp;
+
+        for (int i = 0; i < Numbers.length; i++) {
+            for (int j = i; j < Numbers.length; j++) {
+                temp = Numbers[i];
+                Numbers[i] = Numbers[j];
+                Numbers[j] = temp;
+            }
+        }
+        return Numbers;
+    }
+
+    public static void write(String filename, int[] x) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
         for (int i = 0; i < x.length; i++) {
             writer.write(Integer.toString(x[i]));
@@ -75,13 +134,7 @@ public class MergeSort {
         writer.close();
     }
 
-    /**
-     *
-     * @param input
-     * @param start
-     * @param end
-     */
-    public static void mergeSort(int[] input, int start, int end){
+    public static void mergeSort(int[] input, int start, int end) {
 
         //Breaking Condition for Recursion
         if (start < end) {
@@ -99,14 +152,7 @@ public class MergeSort {
         }
     }
 
-    /**
-     *
-     * @param input
-     * @param start
-     * @param mid
-     * @param end
-     */
-    public static void merge(int[] input, int start, int mid, int end){
+    public static void merge(int[] input, int start, int mid, int end) {
 
         int N1 = mid - start + 1;
         int N2 = end - mid;
@@ -116,10 +162,10 @@ public class MergeSort {
         int R[] = new int[N2];
 
         // Copy data into temporary arrays
-        for (int i = 0; i < N1; ++i){
+        for (int i = 0; i < N1; ++i) {
             L[i] = input[start + i];
         }
-        for (int j = 0; j < N2; ++j){
+        for (int j = 0; j < N2; ++j) {
             R[j] = input[mid + 1 + j];
         }
 
@@ -128,8 +174,8 @@ public class MergeSort {
         int k = start;
 
         // Determine if L[] or R[] becomes the current index of input[k]
-        while (i < N1 && j < N2){
-            if (L[i] <= R[j]){
+        while (i < N1 && j < N2) {
+            if (L[i] <= R[j]) {
                 input[k] = L[i];
                 i++;
             } else {
@@ -147,7 +193,7 @@ public class MergeSort {
         }
 
         // Copy remaining elements of R[] if any
-        while (j < N2){
+        while (j < N2) {
             input[k] = R[j];
             j++;
             k++;

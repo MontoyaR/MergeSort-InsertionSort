@@ -28,10 +28,10 @@ public class InsertionSort {
         }
 
         // Stores the value of the keys array as an text file
-        write("10.keys.InsertionSort.txt", keys);
+        write("10.random.keys.InsertionSort.txt", keys);
 
         // Reads the keys value from the text file
-        Scanner s = new Scanner(new File("10.keys.InsertionSort.txt"));
+        Scanner s = new Scanner(new File("10.random.keys.InsertionSort.txt"));
         int[] input = new int[length];
         int temp = 0;
         while (s.hasNextInt()){
@@ -62,12 +62,6 @@ public class InsertionSort {
         System.out.println("\nInsertion Sort Algorithm runtime: " + runtimeInSeconds + " seconds");
     }
 
-    /**
-     *
-     * @param filename
-     * @param x
-     * @throws IOException
-     */
     public static void write (String filename, int[] x) throws IOException{
         BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
         for (int i = 0; i < x.length; i++) {
@@ -78,11 +72,6 @@ public class InsertionSort {
         writer.close();
     }
 
-    /**
-     *
-     * @param input
-     * @return
-     */
     public static int[] insertionSort(int[] input) {
         for (int i =1; i < input.length; i++) {
             int key = input[i];
