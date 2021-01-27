@@ -23,4 +23,4 @@ Save the input and output files for each configuration and each algorithm.
 -   If you run out of resources for a specific configuration (e.g., out of memory for 1,000,000 keys), it should be noted and submitted.
 
 ## Logarithmic Chart
-!Insertion Sort for Random Ascending Keys](src/Logarithmic Charts/Insertion Sort for Random Ascending Keys.png)
+![Insertion Sort for Random Ascending Keys](src/Logarithmic Charts/Insertion Sort for Random Ascending Keys.png)
