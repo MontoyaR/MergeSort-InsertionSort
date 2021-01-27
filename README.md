@@ -32,6 +32,7 @@ Save the input and output files for each configuration and each algorithm.
 | 5   | 0.0196397  | 100000.random.keys.MergeSort.txt             |
 | 6   | 0.1052271  | 1000000.random.keys.MergeSort.txt            |
 |     |            |                                              |
+|     |            |                                              |
 | 1   | 1.14E-5    | 10.random.ascending.keys.MergeSort.txt       |
 | 2   | 1.378E-4   | 100.random.ascending.keys.MergeSort.txt      |
 | 3   | 7.393E-4   | 1000.random.ascending.keys.MergeSort.txt     |
@@ -47,6 +48,7 @@ Save the input and output files for each configuration and each algorithm.
 | 5   | 0.0124113  | 100000.random.descending.keys.MergeSort.txt  |
 | 6   | 0.0774013  | 1000000.random.descending.keys.MergeSort.txt |
 |     |            |                                              |
+|     |            |                                              |
 | 1   | 4.0E-6     | 10.random.keys.InsertionSort.txt             |
 | 2   | 3.63E-5    | 100.random.keys.InsertionSort.txt            |
 | 3   | 0.00396    | 1000.random.keys.InsertionSort.txt           |
@@ -54,13 +56,21 @@ Save the input and output files for each configuration and each algorithm.
 | 5   | 0.7183386  | 100000.random.keys.InsertionSort.txt         |
 | 6   | 69.9760599 | 1000000.random.keys.InsertionSort.txt        |
 |     |            |                                              |
-|     |            |                                                 |
+|     |            |                                              |
 | 1   | 2.2E-6     | 10.random.ascending.keys.InsertionSort.txt      |
 | 2   | 3.7E-6     | 100.random.ascending.keys.InsertionSort.txt     |
 | 3   | 3.3E-5     | 1000.random.ascending.keys.InsertionSort.txt    |
 | 4   | 3.111E-4   | 10000.random.ascending.keys.InsertionSort.txt   |
 | 5   | 0.0026989  | 100000.random.ascending.keys.InsertionSort.txt  |
 | 6   | 0.0040164  | 1000000.random.ascending.keys.InsertionSort.txt |
+|     |            |                                                  |
+|     |            |                                                  |
+| 1   | 2.7E-6     | 10.random.descending.keys.InsertionSort.txt      |
+| 2   | 7.08E-5    | 100.random.descending.keys.InsertionSort.txt     |
+| 3   | 0.0060629  | 1000.random.descending.keys.InsertionSort.txt    |
+| 4   | 0.0228513  | 10000.random.descending.keys.InsertionSort.txt   |
+| 5   | 1.5202953  | 100000.random.descending.keys.InsertionSort.txt  |
+| 6   | 138.803165 | 1000000.random.descending.keys.InsertionSort.txt |
 
 
 ## Logarithmic Chart
