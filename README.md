@@ -39,6 +39,7 @@ Save the input and output files for each configuration and each algorithm.
 | 5   | 0.0171931  | 100000.random.ascending.keys.MergeSort.txt   |
 | 6   | 0.0531297  | 1000000.random.ascending.keys.MergeSort.txt  |
 |     |            |                                              |
+|     |            |                                              |
 | 1   | 7.1E-6     | 10.random.descending.keys.MergeSort.txt      |
 | 2   | 3.99E-5    | 100.random.descending.keys.MergeSort.txt     |
 | 3   | 0.0013772  | 1000.random.descending.keys.MergeSort.txt    |
@@ -53,7 +54,13 @@ Save the input and output files for each configuration and each algorithm.
 | 5   | 0.7183386  | 100000.random.keys.InsertionSort.txt         |
 | 6   | 69.9760599 | 1000000.random.keys.InsertionSort.txt        |
 |     |            |                                              |
-|     |            |                                              |
+|     |            |                                                 |
+| 1   | 2.2E-6     | 10.random.ascending.keys.InsertionSort.txt      |
+| 2   | 3.7E-6     | 100.random.ascending.keys.InsertionSort.txt     |
+| 3   | 3.3E-5     | 1000.random.ascending.keys.InsertionSort.txt    |
+| 4   | 3.111E-4   | 10000.random.ascending.keys.InsertionSort.txt   |
+| 5   | 0.0026989  | 100000.random.ascending.keys.InsertionSort.txt  |
+| 6   | 0.0040164  | 1000000.random.ascending.keys.InsertionSort.txt |
 
 
 ## Logarithmic Chart
