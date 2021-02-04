@@ -48,7 +48,7 @@ public class InsertionSort {
         }
 
         // Stores the value of the keys array as an text file
-        write("src/Input/1000000.random.descending.keys.InsertionSort.txt", keys);
+        write("src/Input/InsertionSort.test.txt", keys);
 
         // Reads the keys value from the text file
         Scanner s = new Scanner(new File("src/Input/1000000.random.descending.keys.InsertionSort.txt"));

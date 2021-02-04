@@ -44,10 +44,10 @@ public class MergeSort {
         }
 
         // Stores the value of the keys array as an text file
-        write("src/Input/1000000.random.descending.keys.MergeSort.txt", keys);
+        write("src/Input/TestRun.txt", keys);
 
         // Reads the keys value from the text file
-        Scanner s = new Scanner(new File("src/Input/1000000.random.descending.keys.MergeSort.txt"));
+        Scanner s = new Scanner(new File("src/Input/TestRun.txt"));
 
         // Stores the values read from the input file
         int[] input = new int[amount];
@@ -71,7 +71,7 @@ public class MergeSort {
         }
 
         // Stores the result after completing the Merge Sort Algorithm on the array as a text file
-        write("src/Output/output.MergeSort.1000000.random.descending.keys.txt", input);
+        write("src/Output/TestRun.txt", input);
 
         // Runtime for Merge Sort Algorithm
         long runtime = endTime - startTime;
