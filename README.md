@@ -22,7 +22,7 @@ Save the input and output files for each configuration and each algorithm.
 -   Compare the recorded performances (time measurements) with their theoretical growth rates, i.e., “Big-oh” complexities.
 -   If you run out of resources for a specific configuration (e.g., out of memory for 1,000,000 keys), it should be noted and submitted.
 
-## Time Performance
+## Algorithm Performance
 | Run | Time (sec) | File                                         |
 |-----|------------|----------------------------------------------|
 | 1   | 8.4E-6     | 10.random.keys.MergeSort.txt                 |
@@ -88,3 +88,15 @@ Save the input and output files for each configuration and each algorithm.
 | 6   | 138.803165 | 1000000.random.descending.keys.InsertionSort.txt |
 
 ![](https://github.com/MontoyaR/MergeSort-InsertionSort/blob/master/src/Logarithmic%20Charts/Insertion%20Sort%20for%20Random%20Descending%20Keys.png)
+
+## Analysis
+
+Based on the result shown on the first logarithmic chart and from the table, the Merge Sort
+algorithm time complexity is equivalent to the expected time complexity of Θ(n log(n)). The time
+complexity for the best, average, or worst-case scenario remain the same. The same is true whether the
+keys are is ascending or descending order. 
+
+From my understanding, the average time complexity for Insertion Sort algorithm is Θ(n^2) which
+is most similar to the Insertion Sort for random ascending keys and less similar to the descending keys. The
+best time complexity for the Insertion Sort algorithm is O(n) when it swaps elements if they are out of order
+without triggering the inner loop. This is most similar to the Insertion Sort for random keys chart. 
